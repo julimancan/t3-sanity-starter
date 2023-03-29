@@ -11,7 +11,7 @@ const singletonActions = new Set(["publish", "discardChanges", "restore"]);
 export default defineConfig({
   projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: env.NEXT_PUBLIC_SANITY_DATASET,
-  name: "eunicorn-studios",
+  name: "My Studio",
   basePath: "/admin",
   plugins: [deskTool({ structure })],
   schema: {
