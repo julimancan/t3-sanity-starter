@@ -1,28 +1,23 @@
-# Create T3 App
+# This is a starter for Nextjs,  Tailwind, Sanity, React-Query built in Typescript.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+You can use this if you would like to use Sanity as your CMS and have your Nextjs App ready to go.
+## Steps to create and run the app
+1. Run `npm install`
 
-## What's next? How do I make an app with this?
+2. Create your Sanity project
+  - run `npm -y create sanity@latest`
+  - select Create a new Project
+  - Put your project name 
+  - Use your preferred dataset option.
+  - Exit the tool by pressing `Esc` without providing output path as the studio is already embedded in the starter.
+  - Go to [manage.sanity.io](https://manage.sanity.io) and select your project to retrieve the project ID
+  - In the sanity manager go to the API tab and add a CORS origin with `http://localhost:3000` as the URL.
+  - Create a .env file using the env.example as an example and input project id and dataset (usually "production")
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+3. run `npm run dev` to start your development server.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Your t3 app will be running on `http://localhost:3000` and your studio in `http://localhost:3000/admin`
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+There's a basic setup to add more input fields for a homepage and site settings.
 
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Checkout the sanity documentation [Sanity Docs](https://www.sanity.io/docs) for more information on how to create your Studio.
